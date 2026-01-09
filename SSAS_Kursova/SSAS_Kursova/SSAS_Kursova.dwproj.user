@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Goods DW</Id>
+            <Name>Goods DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+Xm/dM7gIEqagd1ZBj4IXAAAAAASAAAARwBvAG8AZABzACAARABXAAAAEGYAAAABAAAgAAAADhygvMHjAE7pvqinno/U2rNzXXTSQHTfN/RiKWc7n7EAAAAADoAAAAACAAAgAAAAFGSel17ZU4kQsTbpFI1BSU0NZmacao4jl4pVzPWrPtcQAAAAAATU8z/LJPHqfjLYr0G4WkAAAAAOKWiVD56BXg5r208bJkIrsh4a0kFPCtL78mKuj5kbKFQ47p0NvjiSB4jSfr+eW4vSltU4AotMyFnn4Nfo3hsL</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Goods DW</Id>
+            <Name>Goods DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+Xm/dM7gIEqagd1ZBj4IXAAAAAASAAAARwBvAG8AZABzACAARABXAAAAEGYAAAABAAAgAAAAW3VYPHrLKjGkKCJHF9Wz4bY3zFyOF5qF2affxerXvGIAAAAADoAAAAACAAAgAAAAxE0d1zpPXp4V5jBQLxuxT92W8Ko2WOg86WPTZ3kah0IQAAAAuAU2Xbn9zhsvOqZywess40AAAAA8W8z1w3F7ylYCT+ho6nqPGvPDpXPrQ1l27Sx+3KsxKRyeh+ckaiVyjSFyqI59lTCt6t9nFLGTG1z+qk7r4aS7</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>REALCOPUTA\LOCALHOST</TargetServer>
+        <TargetDatabase>SSAS_Kursova</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

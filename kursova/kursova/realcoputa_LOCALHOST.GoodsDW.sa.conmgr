@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="realcoputa_LOCALHOST.GoodsDW.sa"
+  DTS:DTSID="{121014B9-D60B-47A5-87EE-DCA257982014}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=realcoputa\LOCALHOST;User ID=sa;Initial Catalog=GoodsDW;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-kursova-{121014B9-D60B-47A5-87EE-DCA257982014}realcoputa\LOCALHOST.GoodsDW.sa;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+Xm/dM7gIEqagd1ZBj4IXAAAAAACAAAAAAAQZgAAAAEAACAAAAB6WyvhrvUpVx0aPIezWFd6znRjHBb/ehX50iYDf5mTVgAAAAAOgAAAAAIAACAAAACfymvRgb3D589QJU8q+9DL/yZ4u+fVGRNr0Nq/you/9nAAAABk0gQ1hBPB3NZx8oYbmqRduI9Q5oYGpIvAdqqJv+8B1FqsJTrXIYPS+ovcv5LwXl6LMuYHweFYjopAx86ZlHzoQzMQ7pvGRdf34Fb96QJGoVDFkFQupF8jSyGw2UiWTWVfBgO2ygRFBVYdZBG8mmNEQAAAAGhYH4Td6J+eYya8RXwuB5VddHaExecr3LFatmcopLV+5xSlIo6umX8vv2RATf0VssKobGg6Z539X9JASQ4tA4k=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

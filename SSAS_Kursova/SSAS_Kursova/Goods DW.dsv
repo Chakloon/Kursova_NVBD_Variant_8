@@ -1,0 +1,352 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b7730356-0c82-4f5f-b004-6d60ed07b861" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Goods DW</ID>
+  <Name>Goods DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Goods DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Goods_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Goods_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6689b37b-9664-4dc7-b4c6-c226a4ce1b43">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dw_DimCustomer" msprop:DbTableName="DimCustomer" msprop:FriendlyName="DimCustomer" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="307f3772-1114-43eb-a416-410e88025d9f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CustomerKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CustomerKey" msprop:DbColumnName="CustomerKey" msprop:design-time-name="3bb4e1d8-b000-4b99-993a-2cfe1efd44ef" type="xs:int" />
+                  <xs:element name="CustomerID" msprop:FriendlyName="CustomerID" msprop:DbColumnName="CustomerID" msprop:design-time-name="e89a1094-815a-4e8e-bb74-291996162959" type="xs:int" />
+                  <xs:element name="CustomerName" msprop:FriendlyName="CustomerName" msprop:DbColumnName="CustomerName" msprop:design-time-name="db8a1952-848e-478a-b3dd-03094148e9ae">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TaxID" msprop:FriendlyName="TaxID" msprop:DbColumnName="TaxID" msprop:design-time-name="af8eb280-78aa-4d1b-8931-3050bb7a215a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Phone" msprop:FriendlyName="Phone" msprop:DbColumnName="Phone" msprop:design-time-name="5b3f4462-9d89-44d8-87bf-d9a0f8613926" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="d9a158fc-b6bf-4430-99a5-84d359cf3638" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Address" msprop:FriendlyName="Address" msprop:DbColumnName="Address" msprop:design-time-name="d10371fd-8637-4e17-9fcc-06525fd3c0c5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsActive" msprop:FriendlyName="IsActive" msprop:DbColumnName="IsActive" msprop:design-time-name="216ba597-f0d5-45b7-98cc-b3ce2f0661f0" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_DimDate" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="07371270-a917-4214-8d63-175435d17a46">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:FriendlyName="DateKey" msprop:DbColumnName="DateKey" msprop:design-time-name="44702c37-0cd4-4866-ad53-51aeb91b6b61" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="8bdf9321-5b69-4ba7-ae39-193720e6406d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="bbcaed29-fbba-46c3-be2f-8014d7f83508" type="xs:short" />
+                  <xs:element name="Quarter" msprop:FriendlyName="Quarter" msprop:DbColumnName="Quarter" msprop:design-time-name="09fba9ef-5acb-4fe4-94be-669038ef9406" type="xs:unsignedByte" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="d67766ca-5bee-437f-94aa-a83f44fbf8eb" type="xs:unsignedByte" />
+                  <xs:element name="MonthName" msprop:FriendlyName="MonthName" msprop:DbColumnName="MonthName" msprop:design-time-name="17af1d5b-36ee-42a6-94b2-803008b8be96">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="9f04275e-4210-4e07-be2a-98d1a908b47e" type="xs:unsignedByte" />
+                  <xs:element name="DayOfWeek" msprop:FriendlyName="DayOfWeek" msprop:DbColumnName="DayOfWeek" msprop:design-time-name="60df80c5-ccfe-4534-accf-627dc7644c25" type="xs:unsignedByte" />
+                  <xs:element name="DayName" msprop:FriendlyName="DayName" msprop:DbColumnName="DayName" msprop:design-time-name="2e1de513-34d8-4851-ba90-4907cff98a51">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsWeekend" msprop:FriendlyName="IsWeekend" msprop:DbColumnName="IsWeekend" msprop:design-time-name="4f1c202d-8de2-4a91-bbe5-b803b959fe49" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_DimOperationType" msprop:DbTableName="DimOperationType" msprop:FriendlyName="DimOperationType" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="e8592c46-90f9-4150-97f7-8d67c8f364f6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="OperationTypeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="OperationTypeKey" msprop:DbColumnName="OperationTypeKey" msprop:design-time-name="38ecfb59-be00-4c10-b195-f8603f08d7c5" type="xs:int" />
+                  <xs:element name="OperationTypeID" msprop:FriendlyName="OperationTypeID" msprop:DbColumnName="OperationTypeID" msprop:design-time-name="116481c9-7698-4452-a2de-b79e5af781b4" type="xs:int" />
+                  <xs:element name="Code" msprop:FriendlyName="Code" msprop:DbColumnName="Code" msprop:design-time-name="a18959f0-e31c-44ae-a440-442ce8c67f93">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="76f9d682-59ba-49bb-a758-74eb60e3833b">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsInflow" msprop:FriendlyName="IsInflow" msprop:DbColumnName="IsInflow" msprop:design-time-name="014d3784-ad80-4917-830d-1c4b2cf237d2" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_DimProduct" msprop:DbTableName="DimProduct" msprop:FriendlyName="DimProduct" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="4ffa58fa-450e-45d1-ab26-495e89253bda">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ProductKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ProductKey" msprop:DbColumnName="ProductKey" msprop:design-time-name="1d9ff833-46ec-441b-861e-088702c38eda" type="xs:int" />
+                  <xs:element name="ProductID" msprop:FriendlyName="ProductID" msprop:DbColumnName="ProductID" msprop:design-time-name="f818ef0f-bd30-48f3-a60e-5f3aabdc2b2e" type="xs:int" />
+                  <xs:element name="ProductCode" msprop:FriendlyName="ProductCode" msprop:DbColumnName="ProductCode" msprop:design-time-name="82be2791-91ab-4a23-8686-69239ced1472" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ProductName" msprop:FriendlyName="ProductName" msprop:DbColumnName="ProductName" msprop:design-time-name="f181416a-aa3a-4887-867f-e619051b90b3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CategoryName" msprop:FriendlyName="CategoryName" msprop:DbColumnName="CategoryName" msprop:design-time-name="f7d5954e-72f9-435b-9582-7fdb9c01f97c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Unit" msprop:FriendlyName="Unit" msprop:DbColumnName="Unit" msprop:design-time-name="365d250f-7df0-42d7-92ae-080161a20dd9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsActive" msprop:FriendlyName="IsActive" msprop:DbColumnName="IsActive" msprop:design-time-name="32d12679-a296-4838-b23c-0d8ef8334d39" type="xs:boolean" />
+                  <xs:element name="CreatedDate" msprop:FriendlyName="CreatedDate" msprop:DbColumnName="CreatedDate" msprop:design-time-name="2fb84264-cc0a-4f44-b7c7-edd3c979dd54" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_DimSupplier" msprop:DbTableName="DimSupplier" msprop:FriendlyName="DimSupplier" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="64c44739-7aac-4fac-b006-7c21e35b9253">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SupplierKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="SupplierKey" msprop:DbColumnName="SupplierKey" msprop:design-time-name="ce713062-a10e-49e3-92ab-7403c2efdd96" type="xs:int" />
+                  <xs:element name="SupplierID" msprop:FriendlyName="SupplierID" msprop:DbColumnName="SupplierID" msprop:design-time-name="a3f97558-9b0b-4ad4-a122-4b5ec1a13934" type="xs:int" />
+                  <xs:element name="SupplierName" msprop:FriendlyName="SupplierName" msprop:DbColumnName="SupplierName" msprop:design-time-name="2769a55a-9b62-462f-9f0d-bc4bd209fefa">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TaxID" msprop:FriendlyName="TaxID" msprop:DbColumnName="TaxID" msprop:design-time-name="d74edd3f-9bfb-4bfc-8d58-c4a69c7d25c3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Phone" msprop:FriendlyName="Phone" msprop:DbColumnName="Phone" msprop:design-time-name="cd9f8c96-8539-4e14-b5cd-e82621f98736" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Email" msprop:FriendlyName="Email" msprop:DbColumnName="Email" msprop:design-time-name="a52e9d30-88e3-40c2-9fcc-f5f74080ea13" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Address" msprop:FriendlyName="Address" msprop:DbColumnName="Address" msprop:design-time-name="ff25a5f8-1356-4651-a351-37d024fd3c59" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ContactPerson" msprop:FriendlyName="ContactPerson" msprop:DbColumnName="ContactPerson" msprop:design-time-name="ef80662d-d3e4-4c4b-8ae3-5e915c6fb358" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsActive" msprop:FriendlyName="IsActive" msprop:DbColumnName="IsActive" msprop:design-time-name="6c0a39b7-68fd-426c-af2b-15f557edcfb0" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_FactInventoryMovement" msprop:DbTableName="FactInventoryMovement" msprop:FriendlyName="FactInventoryMovement" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="a437e8f6-10fc-4ed1-afa5-b839e1ef0318">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactInventoryMovementID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FactInventoryMovementID" msprop:DbColumnName="FactInventoryMovementID" msprop:design-time-name="5fa6f3d0-d47e-4445-af4f-695a0413f53e" type="xs:int" />
+                  <xs:element name="OperationLineID" msprop:FriendlyName="OperationLineID" msprop:DbColumnName="OperationLineID" msprop:design-time-name="272caccc-dff2-49ed-9678-8c1feac22762" type="xs:int" />
+                  <xs:element name="OperationID" msprop:FriendlyName="OperationID" msprop:DbColumnName="OperationID" msprop:design-time-name="d6230eef-f0ad-4084-8432-92d95c4e0387" type="xs:int" />
+                  <xs:element name="OperationDate" msprop:FriendlyName="OperationDate" msprop:DbColumnName="OperationDate" msprop:design-time-name="12c3c763-aaed-40bc-8a3c-2d5d828e99ce" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LineTotal" msprop:FriendlyName="LineTotal" msprop:DbColumnName="LineTotal" msprop:design-time-name="2870febf-7dbf-4adb-9f9d-af23277bb41f" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_FactInventoryMovementLite" msprop:DbTableName="FactInventoryMovementLite" msprop:FriendlyName="FactInventoryMovementLite" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="c94d615d-2c74-4a05-9653-a546d2fd8ded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactInvMoveID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FactInvMoveID" msprop:DbColumnName="FactInvMoveID" msprop:design-time-name="44a9c15a-2ffa-4f73-96b7-abd84e0f3c5e" type="xs:int" />
+                  <xs:element name="OperationLineID" msprop:FriendlyName="OperationLineID" msprop:DbColumnName="OperationLineID" msprop:design-time-name="3dc59726-8094-40c0-aa57-751f3f6dbb4a" type="xs:int" />
+                  <xs:element name="OperationID" msprop:FriendlyName="OperationID" msprop:DbColumnName="OperationID" msprop:design-time-name="2883c71a-de67-49df-8038-662938f529e5" type="xs:int" />
+                  <xs:element name="OperationDate" msprop:FriendlyName="OperationDate" msprop:DbColumnName="OperationDate" msprop:design-time-name="b283c733-0988-486d-a4d7-6e31f9cba461">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="IsInflow" msprop:FriendlyName="IsInflow" msprop:DbColumnName="IsInflow" msprop:design-time-name="c2f0b658-e16e-4fc7-a9d4-721dc9cf6848" type="xs:boolean" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dw_FactPayment" msprop:DbTableName="FactPayment" msprop:FriendlyName="FactPayment" msprop:TableType="Table" msprop:DbSchemaName="dw" msprop:design-time-name="a2e81e56-5117-4fa1-8864-fc8aedb06be2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FactPaymentID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="FactPaymentID" msprop:DbColumnName="FactPaymentID" msprop:design-time-name="b3c6650b-eef7-4a68-a42a-5f84184fdf67" type="xs:long" />
+                  <xs:element name="PaymentID" msprop:FriendlyName="PaymentID" msprop:DbColumnName="PaymentID" msprop:design-time-name="3502dac9-51e9-4fef-be63-2454b0b7c5ff" type="xs:int" />
+                  <xs:element name="OperationID" msprop:FriendlyName="OperationID" msprop:DbColumnName="OperationID" msprop:design-time-name="dda191f0-ce93-4acc-b117-ed51def81451" type="xs:int" />
+                  <xs:element name="PaymentTypeID" msprop:FriendlyName="PaymentTypeID" msprop:DbColumnName="PaymentTypeID" msprop:design-time-name="d6b9700f-3c17-4e6f-b85e-fd33d16a5e9e" type="xs:int" />
+                  <xs:element name="PaymentDate" msprop:FriendlyName="PaymentDate" msprop:DbColumnName="PaymentDate" msprop:design-time-name="2dccb1e9-9a48-43df-b75b-24f081d0be5d">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="b77dd716-acdc-411c-bfd5-7756beba6483" type="xs:decimal" />
+                  <xs:element name="Direction" msprop:FriendlyName="Direction" msprop:DbColumnName="Direction" msprop:design-time-name="e622cd05-a54d-4c76-a033-e0a1fbf98efc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Comment" msprop:FriendlyName="Comment" msprop:DbColumnName="Comment" msprop:design-time-name="d63a6429-f6c2-4427-bf3f-e0f937fd8de7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_DimCustomer" />
+          <xs:field xpath="CustomerKey" />
+        </xs:unique>
+        <xs:unique name="dw_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_DimDate" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="dw_DimOperationType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_DimOperationType" />
+          <xs:field xpath="OperationTypeKey" />
+        </xs:unique>
+        <xs:unique name="dw_DimProduct_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_DimProduct" />
+          <xs:field xpath="ProductKey" />
+        </xs:unique>
+        <xs:unique name="dw_DimSupplier_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_DimSupplier" />
+          <xs:field xpath="SupplierKey" />
+        </xs:unique>
+        <xs:unique name="dw_FactInventoryMovement_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_FactInventoryMovement" />
+          <xs:field xpath="FactInventoryMovementID" />
+        </xs:unique>
+        <xs:unique name="dw_FactInventoryMovementLite_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_FactInventoryMovementLite" />
+          <xs:field xpath="FactInvMoveID" />
+        </xs:unique>
+        <xs:unique name="dw_FactPayment_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dw_FactPayment" />
+          <xs:field xpath="FactPaymentID" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Goods_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

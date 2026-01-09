@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="REALCOPUTA_LOCALHOST.InventoryDB.sa"
+  DTS:DTSID="{B880384D-35B9-4765-A6E5-1B1331F9E975}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=REALCOPUTA\LOCALHOST;User ID=sa;Initial Catalog=InventoryDB;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-kursova-{B880384D-35B9-4765-A6E5-1B1331F9E975}REALCOPUTA\LOCALHOST.InventoryDB.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA+Xm/dM7gIEqagd1ZBj4IXAAAAAACAAAAAAAQZgAAAAEAACAAAACgguynf8vYr7AWQ69Eyyi8Ze+/3z/FK16WKPlAX9g1QgAAAAAOgAAAAAIAACAAAAAyPWskVdUo8rm+lsDp6VH7KaMwUNi6YSJeZynDjU0F9nAAAAAq5bePkXtWc5Gk6gcuwaDa0A3RipqW7zigOlRkwza2jwp7qwA6c2R5CofO2GaCOuedyc4u2Jum/JXRCAZEFKXFKk3ZFPcVRf1hqWLt0DoHjV0BX3m90COQAQCxNRa21qP7Om5Wlb84xaCdQrgJROfIQAAAAMRI6F/i5wuoDksqOgbwsGAWQ8QDJ6JhOT9uHfm4jU6ECzcDl8GzmxLZvt/j6piBsbjHzkTL432fs9NyWsfmGyo=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/3/2026 11:50:27 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="REALCOPUTA"
+  DTS:CreatorName="REALCOPUTA\pirkl"
+  DTS:DTSID="{6AD5F5FC-A3F1-4919-84B2-D43BAA0DBB91}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1010.2"
+  DTS:LocaleID="1058"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{0316A11F-1BD4-48E2-8165-2282D6002DCE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>

@@ -1,0 +1,151 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3b5dfa62-9628-4a9c-97de-649a4a804346" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Goods DW</ID>
+  <Name>Goods DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source dwd:design-time-name="f16540cc-110b-4042-ba97-b505062b3394">
+    <DataSourceViewID>Goods DW</DataSourceViewID>
+  </Source>
+  <Dimensions>
+    <Dimension dwd:design-time-name="16e8da82-8561-4d82-86ac-a1f97a1580e3">
+      <ID>Fact Payment</ID>
+      <Name>Fact Payment</Name>
+      <DimensionID>Fact Payment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d0ccd26b-78b5-4e2e-b56c-aa856e777aef">
+          <AttributeID>Fact Payment ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="39c48a3e-f965-4d9c-908f-f209ec0a7c11">
+      <ID>Fact Payment</ID>
+      <Name>Fact Payment</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="35b2a85b-4c6e-4853-9f56-b5c3346ae769">
+          <ID>Payment ID</ID>
+          <Name>Payment ID</Name>
+          <Source dwd:design-time-name="b7ad3ae5-7bbf-49ed-9c9c-04d69a689177">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="001a163f-7531-4709-81d8-fd73313d5398">
+              <TableID>dw_FactPayment</TableID>
+              <ColumnID>PaymentID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b0fe831b-4696-4a55-8ad8-a8ca64075920">
+          <ID>Operation ID</ID>
+          <Name>Operation ID</Name>
+          <Source dwd:design-time-name="41c718f9-e242-4e9a-bd9f-0465d3624f8c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c0efc539-a920-43ab-8546-392babeb19d0">
+              <TableID>dw_FactPayment</TableID>
+              <ColumnID>OperationID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="de19db14-9579-4214-80e5-1cafe1cddc55">
+          <ID>Payment Type ID</ID>
+          <Name>Payment Type ID</Name>
+          <Source dwd:design-time-name="c251ae4b-6dfc-423b-8267-d62cc2d1087d">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c5679e44-a82a-4c78-93f9-fba3fe12d507">
+              <TableID>dw_FactPayment</TableID>
+              <ColumnID>PaymentTypeID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5dc23360-7436-4c95-9edb-5555479491e6">
+          <ID>Amount</ID>
+          <Name>Amount</Name>
+          <Source dwd:design-time-name="9e550834-efe4-4573-9ca9-33dd3d3a19f7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="41f9c247-79e4-4958-8a20-46f2a55d26ab">
+              <TableID>dw_FactPayment</TableID>
+              <ColumnID>Amount</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="59910dc4-acab-42d7-8291-5706cede0fb9">
+          <ID>Fact Payment Count</ID>
+          <Name>Fact Payment Count</Name>
+          <Source dwd:design-time-name="17104cd6-065d-4077-963b-5141e1d4f3b3">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="2086ba87-df75-45c9-a031-87d94febf74f">
+              <TableID>dw_FactPayment</TableID>
+            </Source>
+          </Source>
+          <AggregateFunction>Count</AggregateFunction>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="46d91175-79ba-4324-a2ef-bfc3af8b486e">
+          <CubeDimensionID>Fact Payment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="eaec2992-95ab-48f6-aeff-47810875b7d9">
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2aa99434-a361-4003-8727-2cc9490b0176">
+                  <DataType>BigInt</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f15061d-f616-407d-b843-89ab3f862ec9">
+                    <TableID>dw_FactPayment</TableID>
+                    <ColumnID>FactPaymentID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <AttributeID>Fact Payment ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
