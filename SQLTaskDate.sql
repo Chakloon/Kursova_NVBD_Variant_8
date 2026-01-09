@@ -1,0 +1,1 @@
+USE	GoodsDW SELECT * FROM dw.FactInventoryMovement
